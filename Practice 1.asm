@@ -245,16 +245,19 @@ GetStrlen:
    pop     rcx
    pop     rbx
    ret
+
 ;-------------------------------------------
 
 
 
 _start:
-;   instructions 
+	call printSpace
+
 
   Exit:
     mov     rax, sys_exit
     xor     rdi, rdi
     syscall
+
   
 	
